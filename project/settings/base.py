@@ -26,6 +26,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 INSTALLED_APPS = [
     'home',
     'search',
+    'project',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -189,3 +190,4 @@ REST_FRAMEWORK = {
 }
 LOGIN_REDIRECT_URL = '/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'project.User'

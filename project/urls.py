@@ -8,7 +8,9 @@ from wagtail.documents import urls as wagtaildocs_urls
 
 from search import views as search_views
 
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
+from project.models import User
+
 from rest_framework import routers, serializers, viewsets
 
 urlpatterns = [
