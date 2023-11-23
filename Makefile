@@ -9,7 +9,7 @@
 # License
 # ------------------------------------------------------------------------------ 
 #
-# Copyright 2016—2022 Jeffrey A. Clark, "Alex"
+# Copyright 2016—2023 Jeffrey A. Clark (Alex)
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -36,16 +36,12 @@ include base.mk
 # ------------------------------------------------------------------------------ 
 #
 # E.g.
-#
+# 
+# Uncomment the next line to include additional makefiles
+#include project.mk
 #
 # Uncomment the next line to customize the project name variable
 #PROJECT_NAME := project
 #
-# Uncomment the next line to customize the commit message variable
-#GIT_COMMIT := update
-#
-# Uncomment the next line to include additional makefiles
-#include project.mk
-#
 # Uncomment the next line to customize the default goal
-#.DEFAULT_GOAL := git-commit-push
+.DEFAULT_GOAL := git-commit-push
